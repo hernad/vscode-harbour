@@ -1,0 +1,37 @@
+{
+    "name": "harbour",
+    "displayName": "harbour",
+    "description": "harbour programming language",
+    "version": "0.0.1",
+    "publisher": "hernad",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "harbour",
+                "aliases": [
+                    "harbour",
+                    "harbour"
+                ],
+                "extensions": [
+                    ".prg",
+                    ".hb",
+                    ".ch"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "harbour",
+                "scopeName": "source.harbour",
+                "path": "./syntaxes/harbour.tmLanguage.json"
+            }
+        ]
+    }
+}
